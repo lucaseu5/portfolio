@@ -7,7 +7,7 @@ type BotaoProps = {
 
 const Botao = styled.button<BotaoProps>`
   background-color: ${(props) => (props.principal ? 'green' : 'red')};
-  font-size: ${(props) => props.fontSize || '16px'}
+  font-size: ${(props) => props.fontSize || '16px'};
 `
 
 const BotaoPerigo = styled(Botao)`
@@ -15,18 +15,22 @@ const BotaoPerigo = styled(Botao)`
   color: #fff;
 
   span {
-    text-decoration: line-through
+    text-decoration: line-through;
   }
 `
 
 function Teste() {
   return (
-  <>
-  <Botao principal>Enviar</Botao>
-  <Botao principal={false} fontSize="14px" >Cancelar</Botao>
-  <BotaoPerigo as="a" principal><span>Não clique aqui</span></BotaoPerigo>
-  </>
-)
+    <>
+      <Botao principal>Enviar</Botao>
+      <Botao principal={false} fontSize="14px">
+        Cancelar
+      </Botao>
+      <BotaoPerigo as="a" principal>
+        <span>Não clique aqui</span>
+      </BotaoPerigo>
+    </>
+  )
 }
 
 export default Teste

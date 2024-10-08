@@ -3,11 +3,11 @@ import EstiloGlobal from './styles'
 
 function App() {
   return (
-  <>
-  <EstiloGlobal />
-  <Teste />
-  </>
-)
+    <>
+      <EstiloGlobal />
+      <Teste />
+    </>
+  )
 }
 
 export default App
